@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+.profile-card {
+    background-color: #ebe9e9;
+    width: 450px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(2, 0, 0.2);
+
+}
+
+.profile-image img {
+    width: 200px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info h2 {
+    margin: 10px 0 5px;
+    font-size: 24px;
+    color: black;
+}
+
+.profile-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #353434;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 34px;
+    margin: 20px 20px;
+    padding: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.action-buttons button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.action-buttons .message {
+    background-color: #e0e0e0;
+    color: #333;
+    &:hover{
+        background-color: #d0d0d0;
+    }
+}
+
+.action-buttons .connect {
+    background-color: #4e7fff;
+    color: #fff;
+    &:hover{
+        background-color: #2d66f8;
+    }
+}
+
+.action-buttons a{
+    text-decoration: none;
+}
+
+
+/* Media query design */
+
+@media (max-width: 700px){
+    .profile-card{
+        width: 300px;
+    }
+}
